@@ -209,6 +209,88 @@
             
               
                 
+                <a class="post-title-link" href="/2015/12/06/happy/" itemprop="url">
+                  happy
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-12-06T00:00:18+08:00" content="2015-12-06">
+              2015-12-06
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <hr>
+<h1 id="vue-js">vue.js</h1><h3 id="数据驱动的组件，为现代化的_Web_界面而生">数据驱动的组件，为现代化的 Web 界面而生</h3><h4 id="代码块">代码块</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;style id="style"&gt;</span><br><span class="line">#app &#123;</span><br><span class="line">    background-color: blue;</span><br><span class="line">    color: #fff;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;div id="app"&gt;</span><br><span class="line">    &lt;input v-model="newTodo" v-on:keyup.enter="addTodo" /&gt;</span><br><span class="line">       &lt;ul&gt;</span><br><span class="line">           &lt;li v-for="todo in todos"&gt;</span><br><span class="line">               &lt;span&gt;&#123;&#123;todo.text&#125;&#125;&lt;/span&gt;</span><br><span class="line">                &lt;button v-on:click="removeTodo($index)"&gt;删除该数&lt;/button&gt;</span><br><span class="line">           &lt;/li&gt;</span><br><span class="line">       &lt;/ul&gt; </span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var vm = new Vue(&#123;</span><br><span class="line">  el: '#app',</span><br><span class="line">  data: &#123;</span><br><span class="line">    newTodo: '',</span><br><span class="line">    todos: [</span><br><span class="line">      &#123; text: 'Add some todos（输入数字并按回车）' &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    addTodo: function () &#123;</span><br><span class="line">      var text = this.newTodo.trim()</span><br><span class="line">      if (text) &#123;</span><br><span class="line">        this.todos.push(&#123; text: text &#125;)</span><br><span class="line">        this.newTodo = ''</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    removeTodo: function (index) &#123;</span><br><span class="line">      this.todos.splice(index, 1)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="显示效果图片">显示效果图片</h5><h2 id=""><img src="images/vue.png" alt="Mou icon"></h2>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/11/27/Browser-sync/" itemprop="url">
                   Browser-sync
                 </a>
@@ -783,7 +865,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
